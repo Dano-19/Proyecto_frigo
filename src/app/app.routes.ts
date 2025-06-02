@@ -14,11 +14,12 @@ import { ChangePasswordComponent } from './auth/components/change-password/chang
 import { ForgotPasswordComponent } from './auth/components/forgot-password/forgot-password.component';
 import { AdminPedidoComponent } from '../app/Paginas/admin/admin-pedido/admin-pedido.component';
 import { VerifyCodeComponent } from './auth/components/verify-code/verify-code.component';
+import { UserListComponent } from './Paginas/admin/user-list/user-list.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 
-  { path: 'formulario', component: FormularioComponent },
+  { path: 'formulario-reporte', component: FormularioComponent },
   { path: 'tecnico', component: ticket_tecnicoComponent },
   { path: 'lista-tecnico', component: ListaTecnicoComponent },
   { path: 'lista-materiales', component: ListaMaterialesComponent },
@@ -34,6 +35,7 @@ export const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-code', component: VerifyCodeComponent},
   {path:'admin-ListaCliente', component: ListaClienteComponent},
+  { path: 'Lista-usuarios', component: UserListComponent },
 
   { path: '**', redirectTo: 'login' } //en caso de que la ruta no exista, redirige al login
 ];
